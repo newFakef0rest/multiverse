@@ -35,6 +35,13 @@ $( function() {
         // $(".side_menu").toggleClass("show");
     });
 
+    $(".close_link").on("click", function () {
+        $(this).toggleClass("active");
+        $(".side_overlay").toggleClass("show");
+        $(".side_overlay2").toggleClass("show");
+        // $(".side_menu").toggleClass("show");
+    });
+
 
     // ---------- to top -----------
 
@@ -188,6 +195,10 @@ $(window).on("load", function () {
     $(function () {
         // gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
+ 
+
+    
+
         $(".side_menu_btn").on("click", function () {
             gsap.to(".side_menu", {
                 opacity: 1,
@@ -262,6 +273,48 @@ $(window).on("load", function () {
             });
         });
 
+
+
+        $(".close_link").on("click", function () {
+            const targetId = $(this).data('href')
+
+            gsap.to(".side_menu", {
+                opacity: 0,
+                visibility: "hidden",
+                duration: 0.5,
+                ease: "power2.out",
+                delay: 1,
+                zIndex: -1,
+            });
+            gsap.to(".main_link", {
+                x: 0,
+                y: 0,
+                scale: 1.3,
+                opacity: 0,
+                stagger: {
+                    amount: 0.5,
+                    from: "start"
+                }
+            });
+            gsap.to(".menu-info", {
+                opacity: 0,
+                scale: 1,
+                visibility: "visible",
+                duration: 0.5,
+                delay: 1.5,
+                ease: "power2.out"
+            });
+            gsap.to("#scrollsmoother-container", {
+                opacity: 1,
+                scale: 1,
+                visibility: "visible",
+                duration: 1,
+                delay: 1.7,
+                ease: "power2.out"
+            });
+            gsap.to(window, {duration: 1, scrollTo: targetId});
+
+        });
+
     });
   
-
