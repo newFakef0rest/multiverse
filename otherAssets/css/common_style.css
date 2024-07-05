@@ -2,10 +2,10 @@
 /* ========= [ * variable ]  =========*/
 /* --------------- variable --------------- */
 :root {
-  --cr-blue1:#7B68EE;
-  --cr-orange1:#FF8851;
-  --cr-green1:#CAF31F;
-  --cr-dark1:#151515;
+  --cr-blue1: #7b68ee;
+  --cr-orange1: #ff8851;
+  --cr-green1: #caf31f;
+  --cr-dark1: #151515;
 }
 
 .cr-blue1 {
@@ -186,7 +186,8 @@ html::-webkit-scrollbar-corner {
 }
 
 body {
-  font-family: "Hanken Grotesk", sans-serif;
+  /* font-family: "Hanken Grotesk", sans-serif; */
+  font-family: "StaraBlack", Georgia;
   text-decoration: none;
   font-size: 14px;
   overflow-x: hidden;
@@ -194,7 +195,7 @@ body {
   color: #191919;
 }
 body .sub-font {
-  font-family: "mona-Medium";
+  font-family: "StaraBlack", Georgia;
 }
 
 .swiper-container {
@@ -220,16 +221,20 @@ body .sub-font {
 .swiper-horizontal .swiper-pagination .swiper-pagination-bullet-active {
   outline: 1px solid var(--cr-dark1);
 }
-.swiper-horizontal .swiper-pagination.swiper-pagination-light .swiper-pagination-bullet {
+.swiper-horizontal
+  .swiper-pagination.swiper-pagination-light
+  .swiper-pagination-bullet {
   background-color: #fff;
 }
-.swiper-horizontal .swiper-pagination.swiper-pagination-light .swiper-pagination-bullet-active {
+.swiper-horizontal
+  .swiper-pagination.swiper-pagination-light
+  .swiper-pagination-bullet-active {
   outline: 1px solid #fff;
 }
 
 .form-control:focus {
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 .navbar {
@@ -252,7 +257,7 @@ h4,
 h5,
 h6 {
   margin: 0;
-  font-family: "mona-SemiBold";
+  font-family: "StaraBlack", Georgia;
 }
 h1.bold,
 h2.bold,
@@ -260,7 +265,7 @@ h3.bold,
 h4.bold,
 h5.bold,
 h6.bold {
-  font-family: "mona-Bold";
+  font-family: "StaraBlack", Georgia;
 }
 
 .container,
@@ -470,23 +475,23 @@ small.text {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   opacity: 0;
   visibility: hidden;
   background-size: cover;
 }
 .side_menu.show .side_shape {
   -webkit-transform: rotate(0) scale(1);
-          transform: rotate(0) scale(1);
+  transform: rotate(0) scale(1);
   opacity: 1;
 }
 .side_menu.show .side_shape2 {
   -webkit-transform: rotate(180deg) scale(1);
-          transform: rotate(180deg) scale(1);
+  transform: rotate(180deg) scale(1);
   opacity: 1;
 }
 .side_menu .content {
@@ -500,7 +505,7 @@ small.text {
 }
 .side_menu .main_links {
   -webkit-padding-start: 6vw;
-          padding-inline-start: 6vw;
+  padding-inline-start: 6vw;
 }
 .side_menu .main_links .main_link {
   position: relative;
@@ -511,7 +516,7 @@ small.text {
   color: #fff;
   opacity: 0;
   -webkit-transform: scale(1.3);
-          transform: scale(1.3);
+  transform: scale(1.3);
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
   padding-left: 40px;
@@ -581,17 +586,17 @@ small.text {
   background-size: contain;
   background-repeat: repeat;
   -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
-          clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+  clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
   -webkit-transition: all 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
   transition: all 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
   -webkit-transition-delay: 1.4s;
-          transition-delay: 1.4s;
+  transition-delay: 1.4s;
 }
 .side_overlay.show {
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-          clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
   -webkit-transition-delay: 0.1s;
-          transition-delay: 0.1s;
+  transition-delay: 0.1s;
 }
 
 .side_overlay2 {
@@ -606,17 +611,17 @@ small.text {
   background-size: contain;
   background-repeat: repeat;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-          clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
   -webkit-transition: all 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
   transition: all 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
   -webkit-transition-delay: 1.4s;
-          transition-delay: 1.4s;
+  transition-delay: 1.4s;
 }
 .side_overlay2.show {
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-          clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
   -webkit-transition-delay: 0.1s;
-          transition-delay: 0.1s;
+  transition-delay: 0.1s;
 }
 
 /* ====================== [ Start mouse-cursor ] ====================== */
@@ -642,8 +647,10 @@ small.text {
   height: 8px;
   z-index: 10000001;
   background-color: var(--cr-orange1);
-  -webkit-transition: width 0.3s ease-in-out, height 0.3s ease-in-out, margin 0.3s ease-in-out, opacity 0.3s ease-in-out;
-  transition: width 0.3s ease-in-out, height 0.3s ease-in-out, margin 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  -webkit-transition: width 0.3s ease-in-out, height 0.3s ease-in-out,
+    margin 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out, height 0.3s ease-in-out,
+    margin 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
 .cursor-inner.cursor-hover {
@@ -657,8 +664,10 @@ small.text {
   box-sizing: border-box;
   opacity: 0.5;
   z-index: 10000000;
-  -webkit-transition: width 0.3s ease-in-out, height 0.3s ease-in-out, margin 0.3s ease-in-out, background-color 0.3s, opacity 0.3s;
-  transition: width 0.3s ease-in-out, height 0.3s ease-in-out, margin 0.3s ease-in-out, background-color 0.3s, opacity 0.3s;
+  -webkit-transition: width 0.3s ease-in-out, height 0.3s ease-in-out,
+    margin 0.3s ease-in-out, background-color 0.3s, opacity 0.3s;
+  transition: width 0.3s ease-in-out, height 0.3s ease-in-out,
+    margin 0.3s ease-in-out, background-color 0.3s, opacity 0.3s;
   opacity: 1;
   -webkit-transition: all 0.1s linear;
   transition: all 0.1s linear;
@@ -667,7 +676,7 @@ small.text {
   height: 40px;
   width: 40px;
   -webkit-box-shadow: rgba(255, 255, 255, 0) 0px 0px 0px 5px;
-          box-shadow: rgba(255, 255, 255, 0) 0px 0px 0px 5px;
+  box-shadow: rgba(255, 255, 255, 0) 0px 0px 0px 5px;
 }
 
 .cursor-outer.cursor-hover {
@@ -676,7 +685,7 @@ small.text {
   margin-top: -30px;
   width: 60px;
   height: 60px;
-  background-color: #FF5F6D33 !important;
+  background-color: #ff5f6d33 !important;
   opacity: 0.5 !important;
 }
 
@@ -700,7 +709,7 @@ small.text {
   padding: 0;
   border: 0;
   -webkit-box-shadow: 0 0 20px #0001;
-          box-shadow: 0 0 20px #0001;
+  box-shadow: 0 0 20px #0001;
   top: 100%;
   left: 0;
   padding: 10px;
@@ -708,7 +717,7 @@ small.text {
   margin: 0;
   display: block;
   -webkit-transform: translateY(15px);
-          transform: translateY(15px);
+  transform: translateY(15px);
   opacity: 0;
   visibility: hidden;
   -webkit-transition: all 0.3s ease;
@@ -725,14 +734,14 @@ small.text {
   opacity: 1;
   visibility: visible;
   -webkit-transform: translateY(0);
-          transform: translateY(0);
+  transform: translateY(0);
 }
 
 .dropdown-submenu:hover > .dropdown-menu {
   opacity: 1;
   visibility: visible;
   -webkit-transform: translateY(0);
-          transform: translateY(0);
+  transform: translateY(0);
 }
 
 .dropdown-submenu {
@@ -756,7 +765,7 @@ small.text {
 select:focus,
 input:focus {
   -webkit-box-shadow: none !important;
-          box-shadow: none !important;
+  box-shadow: none !important;
 }
 
 /* --------------- to_top button --------------- */
@@ -782,11 +791,11 @@ input:focus {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 .to_top small {
   display: block;
@@ -871,23 +880,23 @@ input:focus {
 }
 .left_to_right_apperance {
   -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  transform: scale(1.2);
   -webkit-transition: all 0.8s ease-in-out;
   transition: all 0.8s ease-in-out;
   -webkit-transition-delay: 0.4s;
-          transition-delay: 0.4s;
+  transition-delay: 0.4s;
   -webkit-clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
-          clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+  clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
 }
 .left_to_right_apperance.no_scale {
   -webkit-transform: scale(1);
-          transform: scale(1);
+  transform: scale(1);
 }
 .left_to_right_apperance.animated {
   -webkit-transform: scale(1);
-          transform: scale(1);
+  transform: scale(1);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-          clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
 
 /* ========= [ * buttons ]  =========*/
@@ -906,9 +915,9 @@ input:focus {
 }
 .butn:hover {
   -webkit-box-shadow: 7px 10px 15px #0004;
-          box-shadow: 7px 10px 15px #0004;
+  box-shadow: 7px 10px 15px #0004;
   -webkit-transform: translateY(-2px);
-          transform: translateY(-2px);
+  transform: translateY(-2px);
 }
 
 .butn-1 {
@@ -927,7 +936,14 @@ input:focus {
   left: 10%;
   width: 80%;
   height: 2px;
-  background-image: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#fff), to(transparent));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(transparent),
+    color-stop(#fff),
+    to(transparent)
+  );
   background-image: linear-gradient(to right, transparent, #fff, transparent);
 }
 .butn-1::after {
@@ -937,11 +953,26 @@ input:focus {
   left: 10%;
   width: 80%;
   height: 2px;
-  background-image: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#fff), to(transparent));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(transparent),
+    color-stop(#fff),
+    to(transparent)
+  );
   background-image: linear-gradient(to right, transparent, #fff, transparent);
 }
-.butn-1.butn-wh::before, .butn-1.butn-wh::after {
-  background-image: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#000), to(transparent));
+.butn-1.butn-wh::before,
+.butn-1.butn-wh::after {
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(transparent),
+    color-stop(#000),
+    to(transparent)
+  );
   background-image: linear-gradient(to right, transparent, #000, transparent);
 }
 .butn-1.md-butn {
@@ -950,9 +981,9 @@ input:focus {
 }
 .butn-1:hover {
   -webkit-box-shadow: 7px 10px 15px #0004;
-          box-shadow: 7px 10px 15px #0004;
+  box-shadow: 7px 10px 15px #0004;
   -webkit-transform: translateY(-2px);
-          transform: translateY(-2px);
+  transform: translateY(-2px);
 }
 
 .cir-butn {
@@ -965,11 +996,11 @@ input:focus {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   text-align: center;
   color: #fff;
   margin: 50px auto 0;
@@ -979,7 +1010,7 @@ input:focus {
   width: 100%;
   height: 100%;
   -webkit-transform: scale(2);
-          transform: scale(2);
+  transform: scale(2);
 }
 .cir-butn::after {
   position: absolute;
@@ -1004,7 +1035,7 @@ input:focus {
   width: 25px;
   height: 25px;
   -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  transform: rotate(-45deg);
   position: relative;
   z-index: 5;
 }
@@ -1039,11 +1070,11 @@ input:focus {
   display: -ms-flexbox !important;
   display: flex !important;
   -webkit-box-align: center !important;
-      -ms-flex-align: center !important;
-          align-items: center !important;
+  -ms-flex-align: center !important;
+  align-items: center !important;
   -webkit-box-pack: center !important;
-      -ms-flex-pack: center !important;
-          justify-content: center !important;
+  -ms-flex-pack: center !important;
+  justify-content: center !important;
 }
 
 .dnf-center {
@@ -1051,11 +1082,11 @@ input:focus {
   display: -ms-inline-flexbox !important;
   display: inline-flex !important;
   -webkit-box-align: center !important;
-      -ms-flex-align: center !important;
-          align-items: center !important;
+  -ms-flex-align: center !important;
+  align-items: center !important;
   -webkit-box-pack: center !important;
-      -ms-flex-pack: center !important;
-          justify-content: center !important;
+  -ms-flex-pack: center !important;
+  justify-content: center !important;
 }
 
 /* --------------- radius classes --------------- */
@@ -1214,142 +1245,142 @@ input:focus {
 
 .ms-10 {
   -webkit-margin-start: 10px !important;
-          margin-inline-start: 10px !important;
+  margin-inline-start: 10px !important;
 }
 
 .ms-15 {
   -webkit-margin-start: 15px !important;
-          margin-inline-start: 15px !important;
+  margin-inline-start: 15px !important;
 }
 
 .ms-20 {
   -webkit-margin-start: 20px !important;
-          margin-inline-start: 20px !important;
+  margin-inline-start: 20px !important;
 }
 
 .ms-30 {
   -webkit-margin-start: 30px !important;
-          margin-inline-start: 30px !important;
+  margin-inline-start: 30px !important;
 }
 
 .ms-40 {
   -webkit-margin-start: 40px !important;
-          margin-inline-start: 40px !important;
+  margin-inline-start: 40px !important;
 }
 
 .ms-50 {
   -webkit-margin-start: 50px !important;
-          margin-inline-start: 50px !important;
+  margin-inline-start: 50px !important;
 }
 
 .ms-60 {
   -webkit-margin-start: 60px !important;
-          margin-inline-start: 60px !important;
+  margin-inline-start: 60px !important;
 }
 
 .ms-70 {
   -webkit-margin-start: 70px !important;
-          margin-inline-start: 70px !important;
+  margin-inline-start: 70px !important;
 }
 
 .ms-80 {
   -webkit-margin-start: 80px !important;
-          margin-inline-start: 80px !important;
+  margin-inline-start: 80px !important;
 }
 
 .ms-90 {
   -webkit-margin-start: 90px !important;
-          margin-inline-start: 90px !important;
+  margin-inline-start: 90px !important;
 }
 
 .ms-100 {
   -webkit-margin-start: 100px !important;
-          margin-inline-start: 100px !important;
+  margin-inline-start: 100px !important;
 }
 
 .ms-120 {
   -webkit-margin-start: 120px !important;
-          margin-inline-start: 120px !important;
+  margin-inline-start: 120px !important;
 }
 
 .ms-150 {
   -webkit-margin-start: 150px !important;
-          margin-inline-start: 150px !important;
+  margin-inline-start: 150px !important;
 }
 
 .ms-200 {
   -webkit-margin-start: 200px !important;
-          margin-inline-start: 200px !important;
+  margin-inline-start: 200px !important;
 }
 
 .me-10 {
   -webkit-margin-end: 10px !important;
-          margin-inline-end: 10px !important;
+  margin-inline-end: 10px !important;
 }
 
 .me-15 {
   -webkit-margin-end: 15px !important;
-          margin-inline-end: 15px !important;
+  margin-inline-end: 15px !important;
 }
 
 .me-20 {
   -webkit-margin-end: 20px !important;
-          margin-inline-end: 20px !important;
+  margin-inline-end: 20px !important;
 }
 
 .me-30 {
   -webkit-margin-end: 30px !important;
-          margin-inline-end: 30px !important;
+  margin-inline-end: 30px !important;
 }
 
 .me-40 {
   -webkit-margin-end: 40px !important;
-          margin-inline-end: 40px !important;
+  margin-inline-end: 40px !important;
 }
 
 .me-50 {
   -webkit-margin-end: 50px !important;
-          margin-inline-end: 50px !important;
+  margin-inline-end: 50px !important;
 }
 
 .me-60 {
   -webkit-margin-end: 60px !important;
-          margin-inline-end: 60px !important;
+  margin-inline-end: 60px !important;
 }
 
 .me-70 {
   -webkit-margin-end: 70px !important;
-          margin-inline-end: 70px !important;
+  margin-inline-end: 70px !important;
 }
 
 .me-80 {
   -webkit-margin-end: 80px !important;
-          margin-inline-end: 80px !important;
+  margin-inline-end: 80px !important;
 }
 
 .me-90 {
   -webkit-margin-end: 90px !important;
-          margin-inline-end: 90px !important;
+  margin-inline-end: 90px !important;
 }
 
 .me-100 {
   -webkit-margin-end: 100px !important;
-          margin-inline-end: 100px !important;
+  margin-inline-end: 100px !important;
 }
 
 .me-120 {
   -webkit-margin-end: 120px !important;
-          margin-inline-end: 120px !important;
+  margin-inline-end: 120px !important;
 }
 
 .me-150 {
   -webkit-margin-end: 150px !important;
-          margin-inline-end: 150px !important;
+  margin-inline-end: 150px !important;
 }
 
 .me-200 {
   -webkit-margin-end: 200px !important;
-          margin-inline-end: 200px !important;
+  margin-inline-end: 200px !important;
 }
 
 /* --------------- padding classes --------------- */
@@ -1411,142 +1442,142 @@ input:focus {
 
 .ps-10 {
   -webkit-padding-start: 10px !important;
-          padding-inline-start: 10px !important;
+  padding-inline-start: 10px !important;
 }
 
 .ps-15 {
   -webkit-padding-start: 15px !important;
-          padding-inline-start: 15px !important;
+  padding-inline-start: 15px !important;
 }
 
 .ps-20 {
   -webkit-padding-start: 20px !important;
-          padding-inline-start: 20px !important;
+  padding-inline-start: 20px !important;
 }
 
 .ps-30 {
   -webkit-padding-start: 30px !important;
-          padding-inline-start: 30px !important;
+  padding-inline-start: 30px !important;
 }
 
 .ps-40 {
   -webkit-padding-start: 40px !important;
-          padding-inline-start: 40px !important;
+  padding-inline-start: 40px !important;
 }
 
 .ps-50 {
   -webkit-padding-start: 50px !important;
-          padding-inline-start: 50px !important;
+  padding-inline-start: 50px !important;
 }
 
 .ps-60 {
   -webkit-padding-start: 60px !important;
-          padding-inline-start: 60px !important;
+  padding-inline-start: 60px !important;
 }
 
 .ps-70 {
   -webkit-padding-start: 70px !important;
-          padding-inline-start: 70px !important;
+  padding-inline-start: 70px !important;
 }
 
 .ps-80 {
   -webkit-padding-start: 80px !important;
-          padding-inline-start: 80px !important;
+  padding-inline-start: 80px !important;
 }
 
 .ps-90 {
   -webkit-padding-start: 90px !important;
-          padding-inline-start: 90px !important;
+  padding-inline-start: 90px !important;
 }
 
 .ps-100 {
   -webkit-padding-start: 100px !important;
-          padding-inline-start: 100px !important;
+  padding-inline-start: 100px !important;
 }
 
 .ps-120 {
   -webkit-padding-start: 120px !important;
-          padding-inline-start: 120px !important;
+  padding-inline-start: 120px !important;
 }
 
 .ps-150 {
   -webkit-padding-start: 150px !important;
-          padding-inline-start: 150px !important;
+  padding-inline-start: 150px !important;
 }
 
 .ps-200 {
   -webkit-padding-start: 200px !important;
-          padding-inline-start: 200px !important;
+  padding-inline-start: 200px !important;
 }
 
 .pe-10 {
   -webkit-padding-end: 10px !important;
-          padding-inline-end: 10px !important;
+  padding-inline-end: 10px !important;
 }
 
 .pe-15 {
   -webkit-padding-end: 15px !important;
-          padding-inline-end: 15px !important;
+  padding-inline-end: 15px !important;
 }
 
 .pe-20 {
   -webkit-padding-end: 20px !important;
-          padding-inline-end: 20px !important;
+  padding-inline-end: 20px !important;
 }
 
 .pe-30 {
   -webkit-padding-end: 30px !important;
-          padding-inline-end: 30px !important;
+  padding-inline-end: 30px !important;
 }
 
 .pe-40 {
   -webkit-padding-end: 40px !important;
-          padding-inline-end: 40px !important;
+  padding-inline-end: 40px !important;
 }
 
 .pe-50 {
   -webkit-padding-end: 50px !important;
-          padding-inline-end: 50px !important;
+  padding-inline-end: 50px !important;
 }
 
 .pe-60 {
   -webkit-padding-end: 60px !important;
-          padding-inline-end: 60px !important;
+  padding-inline-end: 60px !important;
 }
 
 .pe-70 {
   -webkit-padding-end: 70px !important;
-          padding-inline-end: 70px !important;
+  padding-inline-end: 70px !important;
 }
 
 .pe-80 {
   -webkit-padding-end: 80px !important;
-          padding-inline-end: 80px !important;
+  padding-inline-end: 80px !important;
 }
 
 .pe-90 {
   -webkit-padding-end: 90px !important;
-          padding-inline-end: 90px !important;
+  padding-inline-end: 90px !important;
 }
 
 .pe-100 {
   -webkit-padding-end: 100px !important;
-          padding-inline-end: 100px !important;
+  padding-inline-end: 100px !important;
 }
 
 .pe-120 {
   -webkit-padding-end: 120px !important;
-          padding-inline-end: 120px !important;
+  padding-inline-end: 120px !important;
 }
 
 .pe-150 {
   -webkit-padding-end: 150px !important;
-          padding-inline-end: 150px !important;
+  padding-inline-end: 150px !important;
 }
 
 .pe-200 {
   -webkit-padding-end: 200px !important;
-          padding-inline-end: 200px !important;
+  padding-inline-end: 200px !important;
 }
 
 .pt-10 {
@@ -1982,7 +2013,7 @@ input:focus {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   display: inherit;
 }
 
@@ -1990,7 +2021,7 @@ input:focus {
   width: 100%;
   height: 100%;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   display: inherit;
 }
 
@@ -2003,7 +2034,7 @@ input:focus {
 }
 .imgrotate-scale-hover:hover img {
   -webkit-transform: rotate(-10deg) scale(1.2);
-          transform: rotate(-10deg) scale(1.2);
+  transform: rotate(-10deg) scale(1.2);
 }
 
 /* --------------- height classes --------------- */
@@ -2458,27 +2489,27 @@ input:focus {
 
 .tr-delay1 {
   -webkit-transition-delay: 0.2s;
-          transition-delay: 0.2s;
+  transition-delay: 0.2s;
 }
 
 .tr-delay2 {
   -webkit-transition-delay: 0.4s;
-          transition-delay: 0.4s;
+  transition-delay: 0.4s;
 }
 
 .tr-delay3 {
   -webkit-transition-delay: 0.6s;
-          transition-delay: 0.6s;
+  transition-delay: 0.6s;
 }
 
 .tr-delay4 {
   -webkit-transition-delay: 0.8s;
-          transition-delay: 0.8s;
+  transition-delay: 0.8s;
 }
 
 .tr-delay5 {
   -webkit-transition-delay: 1s;
-          transition-delay: 1s;
+  transition-delay: 1s;
 }
 
 .hover-underline:hover {
